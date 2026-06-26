@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>İnsan Kaynakları | SİRYAP İnşaat</title>
+  <meta name="description" content="SİRYAP İnşaat İnsan Kaynakları - Kariyer fırsatları, açık pozisyonlar ve başvuru formu." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header id="site-header" class="scrolled">
+    <div class="header-inner">
+      <a href="index.html" class="logo" id="logo-link">
+        <span class="logo-text">SİR<span class="logo-accent">YAP</span></span>
+        <span class="logo-sub">İNŞAAT</span>
+      </a>
+
+      <nav class="main-nav" id="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html#anasayfa" class="nav-link" id="nav-anasayfa">Anasayfa</a></li>
+          <li class="has-dropdown">
+            <a href="index.html#kurumsal" class="nav-link active" id="nav-kurumsal">
+              Kurumsal
+              <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M6 9l6 6 6-6"/>
+              </svg>
+            </a>
+            <ul class="dropdown">
+              <li><a href="ekip.html" class="dropdown-link" id="nav-ekip">Ekip</a></li>
+              <li><a href="insan-kaynaklari.html" class="dropdown-link" id="nav-ik" style="color: var(--primary-dark); background: var(--primary-light);">İnsan Kaynakları</a></li>
+            </ul>
+          </li>
+          <li><a href="index.html#referanslar" class="nav-link" id="nav-referanslar">Referanslar</a></li>
+          <li><a href="index.html#projeler" class="nav-link" id="nav-projeler">Projeler</a></li>
+        </ul>
+      </nav>
+
+      <a href="index.html#iletisim" class="contact-btn" id="contact-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.5 12.37a19.79 19.79 0 01-3.07-8.67A2 2 0 012.45 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.43a16 16 0 006.29 6.29l.8-.8a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+        </svg>
+        İletişim
+      </a>
+
+      <button class="hamburger" id="hamburger-btn" aria-label="Menüyü aç">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE NAV -->
+  <div class="mobile-overlay" id="mobile-overlay"></div>
+  <nav class="mobile-nav" id="mobile-nav">
+    <button class="mobile-close" id="mobile-close-btn" aria-label="Menüyü kapat">✕</button>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html#anasayfa" class="mobile-nav-link">Anasayfa</a></li>
+      <li>
+        <button class="mobile-nav-link mobile-dropdown-toggle" id="mobile-kurumsal-btn">
+          Kurumsal <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <ul class="mobile-sub" id="mobile-sub-kurumsal">
+          <li><a href="ekip.html" class="mobile-sub-link">Ekip</a></li>
+          <li><a href="insan-kaynaklari.html" class="mobile-sub-link">İnsan Kaynakları</a></li>
+        </ul>
+      </li>
+      <li><a href="index.html#referanslar" class="mobile-nav-link">Referanslar</a></li>
+      <li><a href="index.html#projeler" class="mobile-nav-link">Projeler</a></li>
+      <li><a href="index.html#iletisim" class="mobile-nav-link highlight-link">İletişim</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- INNER HERO -->
+    <section class="inner-hero">
+      <div class="container">
+        <div class="inner-hero-content">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html">Anasayfa</a>
+            <span class="breadcrumb-sep">›</span>
+            <span>Kurumsal</span>
+            <span class="breadcrumb-sep">›</span>
+            <span style="color: var(--primary)">İnsan Kaynakları</span>
+          </nav>
+          <h1>İnsan Kaynakları</h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- HR INTRO -->
+    <section style="padding: 80px 0 40px; background: var(--white);">
+      <div class="container">
+        <div style="max-width: 700px; margin: 0 auto; text-align: center;">
+          <div class="section-label center">İnsan Kaynakları</div>
+          <h2 class="section-title center">Birlikte Büyüyün</h2>
+          <div class="section-divider center"></div>
+          <p class="section-sub center">
+            SİRYAP İnşaat, çalışanlarını en değerli varlığı olarak görmektedir. Kariyer gelişimi, eğitim olanakları ve dengeli çalışma ortamıyla sizleri aramıza katılmaya davet ediyoruz.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HR FEATURES & FORM -->
+    <section class="hr-section">
+      <div class="container">
+        <div class="hr-grid">
+          <div class="hr-features">
+            <div class="hr-feature-item">
+              <div class="hr-feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                </svg>
+              </div>
+              <div>
+                <h4>Eğitim & Gelişim</h4>
+                <p>Çalışanlarımıza yurt içi ve yurt dışı eğitim imkânları, sertifika programları ve mesleki gelişim destekleri sunuyoruz.</p>
+              </div>
+            </div>
+
+            <div class="hr-feature-item">
+              <div class="hr-feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/>
+                </svg>
+              </div>
+              <div>
+                <h4>Takım Ruhu</h4>
+                <p>Güçlü ekip kültürü, açık iletişim ve iş birliğine dayalı çalışma ortamımızla başarıyı birlikte inşa ediyoruz.</p>
+              </div>
+            </div>
+
+            <div class="hr-feature-item">
+              <div class="hr-feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/>
+                </svg>
+              </div>
+              <div>
+                <h4>Kariyer İmkânları</h4>
+                <p>Performansı ve katkıyı ön planda tutan terfi sistemimizle kariyer yolunuzu hızla ilerletin.</p>
+              </div>
+            </div>
+
+            <div class="hr-feature-item">
+              <div class="hr-feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                </svg>
+              </div>
+              <div>
+                <h4>Sosyal Haklar</h4>
+                <p>Rekabetçi maaş, özel sağlık sigortası, servis imkânı ve yemek desteği gibi kapsamlı sosyal haklardan yararlanın.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Application Form -->
+          <div class="apply-form-box">
+            <h3>Başvuru Formu</h3>
+            <p>Aşağıdaki formu doldurun, ekibimiz en kısa sürede sizinle iletişime geçsin.</p>
+            <form id="apply-form">
+              <div class="form-group">
+                <label for="apply-ad">Ad Soyad *</label>
+                <input type="text" id="apply-ad" name="ad" placeholder="Adınız ve soyadınız" required />
+              </div>
+              <div class="form-group">
+                <label for="apply-email">E-Posta *</label>
+                <input type="email" id="apply-email" name="email" placeholder="E-posta adresiniz" required />
+              </div>
+              <div class="form-group">
+                <label for="apply-tel">Telefon</label>
+                <input type="tel" id="apply-tel" name="telefon" placeholder="Telefon numaranız" />
+              </div>
+              <div class="form-group">
+                <label for="apply-pozisyon">Başvurulan Pozisyon</label>
+                <select id="apply-pozisyon" name="pozisyon">
+                  <option value="">Pozisyon seçiniz...</option>
+                  <option>İnşaat Mühendisi</option>
+                  <option>Mimar</option>
+                  <option>Proje Yöneticisi</option>
+                  <option>Şantiye Şefi</option>
+                  <option>Elektrik Mühendisi</option>
+                  <option>Mekanik Mühendis</option>
+                  <option>Diğer</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="apply-mesaj">Hakkınızda Kısaca Bilgi</label>
+                <textarea id="apply-mesaj" name="mesaj" rows="4" placeholder="Deneyimleriniz ve motivasyonunuz..."></textarea>
+              </div>
+              <button type="submit" class="btn-primary full-width" id="apply-submit-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:18px;height:18px;">
+                  <line x1="22" y1="2" x2="11" y2="13"/>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                </svg>
+                Başvuruyu Gönder
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OPEN POSITIONS -->
+    <section style="padding: 80px 0; background: var(--off-white);">
+      <div class="container">
+        <div class="section-label center">Açık Pozisyonlar</div>
+        <h2 class="section-title center">Şu An Arıyoruz</h2>
+        <div class="section-divider center"></div>
+
+        <div style="display: grid; gap: 16px; margin-top: 40px; max-width: 800px; margin-left: auto; margin-right: auto;">
+
+          <div style="background: var(--white); border-radius: var(--radius-md); padding: 24px 28px; border: 1.5px solid var(--gray-200); display: flex; justify-content: space-between; align-items: center; gap: 24px; transition: all var(--transition); cursor: pointer;" class="position-card" id="pos-1">
+            <div>
+              <h4 style="font-size: 1rem; font-weight: 700; color: var(--text-primary); margin-bottom: 6px;">Kıdemli İnşaat Mühendisi</h4>
+              <p style="font-size: 0.85rem; color: var(--text-secondary);">Tam Zamanlı · İstanbul · 5+ yıl deneyim</p>
+            </div>
+            <span style="padding: 6px 16px; background: var(--primary-light); color: var(--primary-dark); border-radius: var(--radius-xl); font-size: 0.8rem; font-weight: 700; white-space: nowrap;">Aktif</span>
+          </div>
+
+          <div style="background: var(--white); border-radius: var(--radius-md); padding: 24px 28px; border: 1.5px solid var(--gray-200); display: flex; justify-content: space-between; align-items: center; gap: 24px; transition: all var(--transition); cursor: pointer;" class="position-card" id="pos-2">
+            <div>
+              <h4 style="font-size: 1rem; font-weight: 700; color: var(--text-primary); margin-bottom: 6px;">Proje Mimarı</h4>
+              <p style="font-size: 0.85rem; color: var(--text-secondary);">Tam Zamanlı · Ankara · 3+ yıl deneyim</p>
+            </div>
+            <span style="padding: 6px 16px; background: var(--primary-light); color: var(--primary-dark); border-radius: var(--radius-xl); font-size: 0.8rem; font-weight: 700; white-space: nowrap;">Aktif</span>
+          </div>
+
+          <div style="background: var(--white); border-radius: var(--radius-md); padding: 24px 28px; border: 1.5px solid var(--gray-200); display: flex; justify-content: space-between; align-items: center; gap: 24px; transition: all var(--transition); cursor: pointer;" class="position-card" id="pos-3">
+            <div>
+              <h4 style="font-size: 1rem; font-weight: 700; color: var(--text-primary); margin-bottom: 6px;">Şantiye Şefi</h4>
+              <p style="font-size: 0.85rem; color: var(--text-secondary);">Tam Zamanlı · İstanbul · 7+ yıl deneyim</p>
+            </div>
+            <span style="padding: 6px 16px; background: var(--primary-light); color: var(--primary-dark); border-radius: var(--radius-xl); font-size: 0.8rem; font-weight: 700; white-space: nowrap;">Aktif</span>
+          </div>
+
+          <div style="background: var(--white); border-radius: var(--radius-md); padding: 24px 28px; border: 1.5px solid var(--gray-200); display: flex; justify-content: space-between; align-items: center; gap: 24px; transition: all var(--transition); cursor: pointer;" class="position-card" id="pos-4">
+            <div>
+              <h4 style="font-size: 1rem; font-weight: 700; color: var(--text-primary); margin-bottom: 6px;">Satın Alma Uzmanı</h4>
+              <p style="font-size: 0.85rem; color: var(--text-secondary);">Tam Zamanlı · İstanbul · 2+ yıl deneyim</p>
+            </div>
+            <span style="padding: 6px 16px; background: var(--primary-light); color: var(--primary-dark); border-radius: var(--radius-xl); font-size: 0.8rem; font-weight: 700; white-space: nowrap;">Aktif</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo-text footer-logo">SİR<span class="logo-accent">YAP</span></span>
+          <span class="logo-sub footer-logo-sub">İNŞAAT</span>
+          <p>Kalite ve güvenilirliği bir arada sunan inşaat şirketiniz.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Hızlı Bağlantılar</h4>
+          <ul>
+            <li><a href="index.html#anasayfa">Anasayfa</a></li>
+            <li><a href="index.html#kurumsal">Hakkımızda</a></li>
+            <li><a href="ekip.html">Ekip</a></li>
+            <li><a href="insan-kaynaklari.html">İnsan Kaynakları</a></li>
+            <li><a href="index.html#referanslar">Referanslar</a></li>
+            <li><a href="index.html#projeler">Projeler</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>İletişim</h4>
+          <p>Merkez Mah. İnşaat Cad. No:1<br/>İstanbul, Türkiye</p>
+          <p><a href="tel:+902120000000">+90 (212) 000 00 00</a></p>
+          <p><a href="mailto:info@siryap.com.tr">info@siryap.com.tr</a></p>
+        </div>
+        <div class="footer-social">
+          <h4>Sosyal Medya</h4>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter/X">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 SİRYAP İnşaat. Tüm hakları saklıdır.</p>
+        <p>Kalite · Güvenilirlik · Yenilik</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Position card hover effect
+    document.querySelectorAll('.position-card').forEach(card => {
+      card.addEventListener('mouseenter', () => {
+        card.style.borderColor = 'var(--primary)';
+        card.style.boxShadow = '0 8px 30px rgba(245, 197, 24, 0.2)';
+        card.style.transform = 'translateY(-2px)';
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.borderColor = 'var(--gray-200)';
+        card.style.boxShadow = 'none';
+        card.style.transform = 'translateY(0)';
+      });
+    });
+
+    // Apply form
+    const applyForm = document.getElementById('apply-form');
+    if (applyForm) {
+      applyForm.addEventListener('submit', e => {
+        e.preventDefault();
+        const btn = document.getElementById('apply-submit-btn');
+        btn.innerHTML = 'Başvurunuz Alındı! ✓';
+        btn.style.background = '#4CAF50';
+        btn.disabled = true;
+        applyForm.reset();
+        setTimeout(() => {
+          btn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:18px;height:18px;"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg> Başvuruyu Gönder';
+          btn.style.background = '';
+          btn.disabled = false;
+        }, 4000);
+      });
+    }
+  </script>
+</body>
+</html>

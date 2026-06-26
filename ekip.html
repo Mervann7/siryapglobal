@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ekip | SİRYAP İnşaat</title>
+  <meta name="description" content="SİRYAP İnşaat uzman ekibimizle tanışın. Deneyimli mühendisler, mimarlar ve proje yöneticilerinden oluşan kadromuz." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header id="site-header" class="scrolled">
+    <div class="header-inner">
+      <a href="index.html" class="logo" id="logo-link">
+        <span class="logo-text">SİR<span class="logo-accent">YAP</span></span>
+        <span class="logo-sub">İNŞAAT</span>
+      </a>
+
+      <nav class="main-nav" id="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html#anasayfa" class="nav-link" id="nav-anasayfa">Anasayfa</a></li>
+          <li class="has-dropdown">
+            <a href="index.html#kurumsal" class="nav-link active" id="nav-kurumsal">
+              Kurumsal
+              <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M6 9l6 6 6-6"/>
+              </svg>
+            </a>
+            <ul class="dropdown">
+              <li><a href="ekip.html" class="dropdown-link" id="nav-ekip" style="color: var(--primary-dark); background: var(--primary-light);">Ekip</a></li>
+              <li><a href="insan-kaynaklari.html" class="dropdown-link" id="nav-ik">İnsan Kaynakları</a></li>
+            </ul>
+          </li>
+          <li><a href="index.html#referanslar" class="nav-link" id="nav-referanslar">Referanslar</a></li>
+          <li><a href="index.html#projeler" class="nav-link" id="nav-projeler">Projeler</a></li>
+        </ul>
+      </nav>
+
+      <a href="index.html#iletisim" class="contact-btn" id="contact-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.5 12.37a19.79 19.79 0 01-3.07-8.67A2 2 0 012.45 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.43a16 16 0 006.29 6.29l.8-.8a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+        </svg>
+        İletişim
+      </a>
+
+      <button class="hamburger" id="hamburger-btn" aria-label="Menüyü aç">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE NAV -->
+  <div class="mobile-overlay" id="mobile-overlay"></div>
+  <nav class="mobile-nav" id="mobile-nav">
+    <button class="mobile-close" id="mobile-close-btn" aria-label="Menüyü kapat">✕</button>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html#anasayfa" class="mobile-nav-link">Anasayfa</a></li>
+      <li>
+        <button class="mobile-nav-link mobile-dropdown-toggle" id="mobile-kurumsal-btn">
+          Kurumsal <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <ul class="mobile-sub" id="mobile-sub-kurumsal">
+          <li><a href="ekip.html" class="mobile-sub-link">Ekip</a></li>
+          <li><a href="insan-kaynaklari.html" class="mobile-sub-link">İnsan Kaynakları</a></li>
+        </ul>
+      </li>
+      <li><a href="index.html#referanslar" class="mobile-nav-link">Referanslar</a></li>
+      <li><a href="index.html#projeler" class="mobile-nav-link">Projeler</a></li>
+      <li><a href="index.html#iletisim" class="mobile-nav-link highlight-link">İletişim</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- INNER HERO -->
+    <section class="inner-hero">
+      <div class="container">
+        <div class="inner-hero-content">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html">Anasayfa</a>
+            <span class="breadcrumb-sep">›</span>
+            <span>Kurumsal</span>
+            <span class="breadcrumb-sep">›</span>
+            <span style="color: var(--primary)">Ekip</span>
+          </nav>
+          <h1>Ekibimiz</h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM INTRO -->
+    <section style="padding: 80px 0 40px; background: var(--white);">
+      <div class="container">
+        <div style="max-width: 700px; margin: 0 auto; text-align: center;">
+          <div class="section-label center">Ekibimiz</div>
+          <h2 class="section-title center">Uzman Kadromuz</h2>
+          <div class="section-divider center"></div>
+          <p class="section-sub center">
+            SİRYAP İnşaat'ın gücü, alanında uzman ve deneyimli profesyonellerden oluşan ekibimizden gelmektedir. Her biri kendi disiplininde lider olan kadromuz, projelerinizi en yüksek standartlarda hayata geçirir.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM GRID -->
+    <section class="team-section">
+      <div class="container">
+        <div class="team-grid">
+
+          <!-- Genel Müdür -->
+          <div class="team-card">
+            <div class="team-img-wrap" style="background: linear-gradient(135deg, #2a2a2a 0%, #444 100%); display:flex; align-items:center; justify-content:center;">
+              <div style="width:100px;height:100px;border-radius:50%;background:var(--primary);display:flex;align-items:center;justify-content:center;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.5" style="width:48px;height:48px;">
+                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/>
+                </svg>
+              </div>
+            </div>
+            <div class="team-card-body">
+              <h3>Ahmet Yıldız</h3>
+              <p class="role">Genel Müdür</p>
+              <p>25 yıllık sektör deneyimiyle SİRYAP'ın büyüme vizyonunu yönetmektedir. İnşaat mühendisliği ve işletme alanında lisansüstü eğitimi bulunmaktadır.</p>
+            </div>
+          </div>
+
+          <!-- Teknik Direktör -->
+          <div class="team-card">
+            <div class="team-img-wrap" style="background: linear-gradient(135deg, #1a3a5c 0%, #2a5a8c 100%); display:flex; align-items:center; justify-content:center;">
+              <div style="width:100px;height:100px;border-radius:50%;background:var(--primary);display:flex;align-items:center;justify-content:center;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.5" style="width:48px;height:48px;">
+                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/>
+                </svg>
+              </div>
+            </div>
+            <div class="team-card-body">
+              <h3>Mehmet Kaya</h3>
+              <p class="role">Teknik Direktör</p>
+              <p>Yapısal tasarım ve proje yönetimi konusunda 18 yıllık deneyime sahiptir. Yüzden fazla projeyi başarıyla yönetmiştir.</p>
+            </div>
+          </div>
+
+          <!-- Baş Mimar -->
+          <div class="team-card">
+            <div class="team-img-wrap" style="background: linear-gradient(135deg, #3a1a5c 0%, #6a2a8c 100%); display:flex; align-items:center; justify-content:center;">
+              <div style="width:100px;height:100px;border-radius:50%;background:var(--primary);display:flex;align-items:center;justify-content:center;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.5" style="width:48px;height:48px;">
+                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/>
+                </svg>
+              </div>
+            </div>
+            <div class="team-card-body">
+              <h3>Zeynep Arslan</h3>
+              <p class="role">Baş Mimar</p>
+              <p>Modern ve sürdürülebilir mimari tasarım uzmanıdır. Ulusal ve uluslararası ödülleri olan projeler imzalamıştır.</p>
+            </div>
+          </div>
+
+          <!-- Proje Müdürü -->
+          <div class="team-card">
+            <div class="team-img-wrap" style="background: linear-gradient(135deg, #1a5c2a 0%, #2a8c4a 100%); display:flex; align-items:center; justify-content:center;">
+              <div style="width:100px;height:100px;border-radius:50%;background:var(--primary);display:flex;align-items:center;justify-content:center;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.5" style="width:48px;height:48px;">
+                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/>
+                </svg>
+              </div>
+            </div>
+            <div class="team-card-body">
+              <h3>Can Demir</h3>
+              <p class="role">Proje Müdürü</p>
+              <p>Büyük ölçekli altyapı ve konut projelerinin yönetiminde 12 yıllık deneyime sahiptir.</p>
+            </div>
+          </div>
+
+          <!-- İnşaat Mühendisi -->
+          <div class="team-card">
+            <div class="team-img-wrap" style="background: linear-gradient(135deg, #5c3a1a 0%, #8c5a2a 100%); display:flex; align-items:center; justify-content:center;">
+              <div style="width:100px;height:100px;border-radius:50%;background:var(--primary);display:flex;align-items:center;justify-content:center;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.5" style="width:48px;height:48px;">
+                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/>
+                </svg>
+              </div>
+            </div>
+            <div class="team-card-body">
+              <h3>Elif Şahin</h3>
+              <p class="role">Kıdemli İnşaat Mühendisi</p>
+              <p>Statik ve yapısal analiz konusunda uzmanlaşmış, 10 yıllık deneyimli bir inşaat mühendisidir.</p>
+            </div>
+          </div>
+
+          <!-- Mali İşler -->
+          <div class="team-card">
+            <div class="team-img-wrap" style="background: linear-gradient(135deg, #1a4a5c 0%, #2a6a7c 100%); display:flex; align-items:center; justify-content:center;">
+              <div style="width:100px;height:100px;border-radius:50%;background:var(--primary);display:flex;align-items:center;justify-content:center;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.5" style="width:48px;height:48px;">
+                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/>
+                </svg>
+              </div>
+            </div>
+            <div class="team-card-body">
+              <h3>Ali Öztürk</h3>
+              <p class="role">Mali İşler Direktörü</p>
+              <p>Finans yönetimi ve maliyet kontrolü alanında 15 yılı aşkın deneyime sahip profesyonel bir yöneticidir.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section style="padding: 80px 0; background: var(--white); text-align: center;">
+      <div class="container">
+        <h2 class="section-title center">Ekibimizin Parçası Olun</h2>
+        <p class="section-sub center">Kariyer fırsatlarımız için İnsan Kaynakları sayfamızı ziyaret edin.</p>
+        <a href="insan-kaynaklari.html" class="btn-primary" id="cta-ik-btn">İnsan Kaynakları</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo-text footer-logo">SİR<span class="logo-accent">YAP</span></span>
+          <span class="logo-sub footer-logo-sub">İNŞAAT</span>
+          <p>Kalite ve güvenilirliği bir arada sunan inşaat şirketiniz.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Hızlı Bağlantılar</h4>
+          <ul>
+            <li><a href="index.html#anasayfa">Anasayfa</a></li>
+            <li><a href="index.html#kurumsal">Hakkımızda</a></li>
+            <li><a href="ekip.html">Ekip</a></li>
+            <li><a href="insan-kaynaklari.html">İnsan Kaynakları</a></li>
+            <li><a href="index.html#referanslar">Referanslar</a></li>
+            <li><a href="index.html#projeler">Projeler</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>İletişim</h4>
+          <p>Merkez Mah. İnşaat Cad. No:1<br/>İstanbul, Türkiye</p>
+          <p><a href="tel:+902120000000">+90 (212) 000 00 00</a></p>
+          <p><a href="mailto:info@siryap.com.tr">info@siryap.com.tr</a></p>
+        </div>
+        <div class="footer-social">
+          <h4>Sosyal Medya</h4>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter/X">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 SİRYAP İnşaat. Tüm hakları saklıdır.</p>
+        <p>Kalite · Güvenilirlik · Yenilik</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

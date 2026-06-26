@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SİRYAP İnşaat | Kalite ve Güvenilirlik</title>
+  <meta name="description" content="SİRYAP İnşaat - Türkiye'nin önde gelen inşaat şirketlerinden biri. Konut, ticari ve endüstriyel projelerimizle kaliteyi ve güvenilirliği bir arada sunuyoruz." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header id="site-header">
+    <div class="header-inner">
+      <!-- Logo -->
+      <a href="#anasayfa" class="logo" id="logo-link">
+        <span class="logo-text">SİR<span class="logo-accent">YAP</span></span>
+        <span class="logo-sub">İNŞAAT</span>
+      </a>
+
+      <!-- Navigation -->
+      <nav class="main-nav" id="main-nav">
+        <ul class="nav-list">
+          <li><a href="#anasayfa" class="nav-link active" id="nav-anasayfa">Anasayfa</a></li>
+          <li class="has-dropdown">
+            <a href="#kurumsal" class="nav-link" id="nav-kurumsal">
+              Kurumsal
+              <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M6 9l6 6 6-6"/>
+              </svg>
+            </a>
+            <ul class="dropdown">
+              <li><a href="ekip.html" class="dropdown-link" id="nav-ekip">Ekip</a></li>
+              <li><a href="insan-kaynaklari.html" class="dropdown-link" id="nav-ik">İnsan Kaynakları</a></li>
+            </ul>
+          </li>
+          <li><a href="#referanslar" class="nav-link" id="nav-referanslar">Referanslar</a></li>
+          <li><a href="#projeler" class="nav-link" id="nav-projeler">Projeler</a></li>
+        </ul>
+      </nav>
+
+      <!-- Contact Button -->
+      <a href="#iletisim" class="contact-btn" id="contact-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.5 12.37a19.79 19.79 0 01-3.07-8.67A2 2 0 012.45 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.43a16 16 0 006.29 6.29l.8-.8a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+        </svg>
+        İletişim
+      </a>
+
+      <!-- Hamburger -->
+      <button class="hamburger" id="hamburger-btn" aria-label="Menüyü aç">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE NAV OVERLAY -->
+  <div class="mobile-overlay" id="mobile-overlay"></div>
+  <nav class="mobile-nav" id="mobile-nav">
+    <button class="mobile-close" id="mobile-close-btn" aria-label="Menüyü kapat">✕</button>
+    <ul class="mobile-nav-list">
+      <li><a href="#anasayfa" class="mobile-nav-link">Anasayfa</a></li>
+      <li>
+        <button class="mobile-nav-link mobile-dropdown-toggle" id="mobile-kurumsal-btn">
+          Kurumsal <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <ul class="mobile-sub" id="mobile-sub-kurumsal">
+          <li><a href="ekip.html" class="mobile-sub-link">Ekip</a></li>
+          <li><a href="insan-kaynaklari.html" class="mobile-sub-link">İnsan Kaynakları</a></li>
+        </ul>
+      </li>
+      <li><a href="#referanslar" class="mobile-nav-link">Referanslar</a></li>
+      <li><a href="#projeler" class="mobile-nav-link">Projeler</a></li>
+      <li><a href="#iletisim" class="mobile-nav-link highlight-link">İletişim</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="anasayfa" class="hero-section">
+      <div class="hero-slider" id="hero-slider">
+        <div class="hero-slide active" style="background-image: url('assets/hero_bg.png')"></div>
+        <div class="hero-slide" style="background-image: url('assets/project1.png')"></div>
+        <div class="hero-slide" style="background-image: url('assets/project2.png')"></div>
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="hero-badge animate-fadeIn">İnşaat & Taahhüt</div>
+        <h1 class="hero-title animate-slideUp">
+          Hayallerinizi<br/>
+          <span class="hero-accent">Gerçeğe</span> Dönüştürüyoruz
+        </h1>
+        <p class="hero-desc animate-slideUp delay-1">
+          SİRYAP İnşaat olarak; konut, ticari ve endüstriyel projelerde kalite, güvenilirlik ve yenilikçi çözümler sunuyoruz.
+        </p>
+        <div class="hero-btns animate-slideUp delay-2">
+          <a href="#projeler" class="btn-primary" id="hero-projects-btn">Projelerimiz</a>
+          <a href="#iletisim" class="btn-outline" id="hero-contact-btn">Bize Ulaşın</a>
+        </div>
+      </div>
+      <div class="hero-dots" id="hero-dots">
+        <button class="dot active" data-index="0" aria-label="Slayt 1"></button>
+        <button class="dot" data-index="1" aria-label="Slayt 2"></button>
+        <button class="dot" data-index="2" aria-label="Slayt 3"></button>
+      </div>
+      <div class="hero-scroll-hint">
+        <span>Keşfet</span>
+        <div class="scroll-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 5v14M5 12l7 7 7-7"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS SECTION -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number" data-target="25">0</div>
+            <div class="stat-plus">+</div>
+            <div class="stat-label">Yıllık Deneyim</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="350">0</div>
+            <div class="stat-plus">+</div>
+            <div class="stat-label">Tamamlanan Proje</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="120">0</div>
+            <div class="stat-plus">+</div>
+            <div class="stat-label">Uzman Çalışan</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="98">0</div>
+            <div class="stat-plus">%</div>
+            <div class="stat-label">Müşteri Memnuniyeti</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KURUMSAL / HAKKIMIZDA SECTION -->
+    <section id="kurumsal" class="about-section">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image-wrapper">
+            <div class="about-image-frame">
+              <img src="assets/about_img.png" alt="SİRYAP İnşaat Ekibi" class="about-img" />
+            </div>
+            <div class="about-badge-card">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+              <div>
+                <strong>ISO 9001</strong>
+                <span>Kalite Sertifikası</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-content">
+            <div class="section-label">Kurumsal</div>
+            <h2 class="section-title">Hakkımızda</h2>
+            <div class="section-divider"></div>
+            <p class="about-text">
+              SİRYAP İnşaat, 25 yılı aşkın sektör deneyimiyle Türkiye'nin dört bir yanında köklü yapılar inşa eden, güvenilir ve yenilikçi bir inşaat şirketidir.
+            </p>
+            <p class="about-text">
+              Her projemizde en yüksek kalite standartlarını, zamanında teslim ilkesini ve müşteri memnuniyetini ön planda tutarak; konut, ticari alan ve endüstriyel yapılar başta olmak üzere geniş bir yelpazede hizmet sunuyoruz.
+            </p>
+            <div class="about-features">
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                </div>
+                <span>Zamanında Teslim Garantisi</span>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                </div>
+                <span>Uluslararası Kalite Standartları</span>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                </div>
+                <span>Anahtar Teslim Projeler</span>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                </div>
+                <span>Şeffaf Maliyet Yönetimi</span>
+              </div>
+            </div>
+            <a href="ekip.html" class="btn-primary" id="about-team-btn">Ekibimizi Tanıyın</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REFERANSLAR SECTION (Auto-scrolling) -->
+    <section id="referanslar" class="references-section">
+      <div class="container">
+        <div class="section-label center">Referanslar</div>
+        <h2 class="section-title center">Güvenilir İş Ortaklarımız</h2>
+        <div class="section-divider center"></div>
+        <p class="section-sub center">Yıllar içinde birlikte çalıştığımız köklü kurumlar ve firmalar</p>
+      </div>
+
+      <!-- Scrolling logos track -->
+      <div class="refs-scroll-wrapper">
+        <div class="refs-track" id="refs-track">
+          <!-- First set -->
+          <div class="ref-logo-card">
+            <div class="ref-logo-inner">
+              <img src="assets/logo_aselsan.png" alt="ASELSAN" />
+              <span>ASELSAN</span>
+            </div>
+          </div>
+          <div class="ref-logo-card">
+            <div class="ref-logo-inner">
+              <img src="assets/logo_msb.png" alt="Milli Savunma Bakanlığı" />
+              <span>Millî Savunma Bakanlığı</span>
+            </div>
+          </div>
+          <div class="ref-logo-card">
+            <div class="ref-logo-inner ref-logo-text-only">
+              <div class="ref-text-logo" style="color:#c8102e; font-size:1.6rem; font-weight:900; letter-spacing:-0.03em;">HAVELSAN</div>
+              <span>HAVELSAN A.Ş.</span>
+            </div>
+          </div>
+          <div class="ref-logo-card">
+            <div class="ref-logo-inner ref-logo-text-only">
+              <div class="ref-text-logo" style="color:#003087; font-size:1.4rem; font-weight:900; letter-spacing:0.05em;">ROKETSAN</div>
+              <span>ROKETSAN A.Ş.</span>
+            </div>
+          </div>
+          <div class="ref-logo-card">
+            <div class="ref-logo-inner ref-logo-text-only">
+              <div class="ref-text-logo" style="color:#1a1a2e; font-size:1.5rem; font-weight:900;">TAI</div>
+              <span>Türk Havacılık ve Uzay San.</span>
+            </div>
+          </div>
+          <div class="ref-logo-card">
+            <div class="ref-logo-inner ref-logo-text-only">
+              <div class="ref-text-logo" style="color:#e8500a; font-size:1.3rem; font-weight:900; letter-spacing:0.08em;">TOGG</div>
+              <span>Türkiye'nin Otomobili</span>
+            </div>
+          </div>
+          <div class="ref-logo-card">
+            <div class="ref-logo-inner ref-logo-text-only">
+              <div class="ref-text-logo" style="color:#00539f; font-size:1.4rem; font-weight:900;">STM</div>
+              <span>Savunma Teknolojileri Müh.</span>
+            </div>
+          </div>
+          <!-- Duplicate set for seamless loop -->
+          <div class="ref-logo-card">
+            <div class="ref-logo-inner">
+              <img src="assets/logo_aselsan.png" alt="ASELSAN" />
+              <span>ASELSAN</span>
+            </div>
+          </div>
+          <div class="ref-logo-card">
+            <div class="ref-logo-inner">
+              <img src="assets/logo_msb.png" alt="Milli Savunma Bakanlığı" />
+              <span>Millî Savunma Bakanlığı</span>
+            </div>
+          </div>
+          <div class="ref-logo-card">
+            <div class="ref-logo-inner ref-logo-text-only">
+              <div class="ref-text-logo" style="color:#c8102e; font-size:1.6rem; font-weight:900; letter-spacing:-0.03em;">HAVELSAN</div>
+              <span>HAVELSAN A.Ş.</span>
+            </div>
+          </div>
+          <div class="ref-logo-card">
+            <div class="ref-logo-inner ref-logo-text-only">
+              <div class="ref-text-logo" style="color:#003087; font-size:1.4rem; font-weight:900; letter-spacing:0.05em;">ROKETSAN</div>
+              <span>ROKETSAN A.Ş.</span>
+            </div>
+          </div>
+          <div class="ref-logo-card">
+            <div class="ref-logo-inner ref-logo-text-only">
+              <div class="ref-text-logo" style="color:#1a1a2e; font-size:1.5rem; font-weight:900;">TAI</div>
+              <span>Türk Havacılık ve Uzay San.</span>
+            </div>
+          </div>
+          <div class="ref-logo-card">
+            <div class="ref-logo-inner ref-logo-text-only">
+              <div class="ref-text-logo" style="color:#e8500a; font-size:1.3rem; font-weight:900; letter-spacing:0.08em;">TOGG</div>
+              <span>Türkiye'nin Otomobili</span>
+            </div>
+          </div>
+          <div class="ref-logo-card">
+            <div class="ref-logo-inner ref-logo-text-only">
+              <div class="ref-text-logo" style="color:#00539f; font-size:1.4rem; font-weight:900;">STM</div>
+              <span>Savunma Teknolojileri Müh.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJELER SECTION -->
+    <section id="projeler" class="projects-section">
+      <div class="container">
+        <div class="section-label center">Projeler</div>
+        <h2 class="section-title center">Öne Çıkan Projelerimiz</h2>
+        <div class="section-divider center"></div>
+        <p class="section-sub center">Tamamladığımız ve devam eden projelerimizden seçmeler</p>
+
+        <div class="project-filters" id="project-filters">
+          <button class="filter-btn active" data-filter="all" id="filter-all">Tümü</button>
+          <button class="filter-btn" data-filter="konut" id="filter-konut">Konut</button>
+          <button class="filter-btn" data-filter="ticari" id="filter-ticari">Ticari</button>
+          <button class="filter-btn" data-filter="endustri" id="filter-endustri">Endüstriyel</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          <div class="project-card" data-category="konut">
+            <div class="project-img-wrap">
+              <img src="assets/project1.png" alt="Bostancı Rezidans" />
+              <div class="project-overlay">
+                <span class="project-tag">Konut</span>
+                <h3>Bostancı Rezidans</h3>
+                <p>İstanbul, 2024</p>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-category-badge">Konut</span>
+              <h3 class="project-name">Bostancı Rezidans</h3>
+              <p class="project-location">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+                İstanbul
+              </p>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="ticari">
+            <div class="project-img-wrap">
+              <img src="assets/project2.png" alt="Merkez Plaza" />
+              <div class="project-overlay">
+                <span class="project-tag">Ticari</span>
+                <h3>Merkez Plaza</h3>
+                <p>Ankara, 2023</p>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-category-badge">Ticari</span>
+              <h3 class="project-name">Merkez Plaza</h3>
+              <p class="project-location">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+                Ankara
+              </p>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="konut">
+            <div class="project-img-wrap">
+              <img src="assets/project3.png" alt="Emirgan Villalar" />
+              <div class="project-overlay">
+                <span class="project-tag">Konut</span>
+                <h3>Emirgan Villalar</h3>
+                <p>İstanbul, 2024</p>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-category-badge">Konut</span>
+              <h3 class="project-name">Emirgan Villalar</h3>
+              <p class="project-location">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+                İstanbul
+              </p>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="endustri">
+            <div class="project-img-wrap">
+              <img src="assets/ref2.png" alt="Gebze Lojistik Merkezi" />
+              <div class="project-overlay">
+                <span class="project-tag">Endüstriyel</span>
+                <h3>Gebze Lojistik Merkezi</h3>
+                <p>Kocaeli, 2022</p>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-category-badge">Endüstriyel</span>
+              <h3 class="project-name">Gebze Lojistik Merkezi</h3>
+              <p class="project-location">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+                Kocaeli
+              </p>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="ticari">
+            <div class="project-img-wrap">
+              <img src="assets/ref1.png" alt="Ataşehir AVM" />
+              <div class="project-overlay">
+                <span class="project-tag">Ticari</span>
+                <h3>Ataşehir AVM</h3>
+                <p>İstanbul, 2023</p>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-category-badge">Ticari</span>
+              <h3 class="project-name">Ataşehir AVM</h3>
+              <p class="project-location">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+                İstanbul
+              </p>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="endustri">
+            <div class="project-img-wrap">
+              <img src="assets/about_img.png" alt="Teknopark Binası" />
+              <div class="project-overlay">
+                <span class="project-tag">Endüstriyel</span>
+                <h3>Teknopark Binası</h3>
+                <p>İzmir, 2021</p>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-category-badge">Endüstriyel</span>
+              <h3 class="project-name">Teknopark Binası</h3>
+              <p class="project-location">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+                İzmir
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ILETISIM SECTION -->
+    <section id="iletisim" class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="section-label">İletişim</div>
+            <h2 class="section-title">Bize Ulaşın</h2>
+            <div class="section-divider"></div>
+            <p class="contact-desc">Projeleriniz için uzman ekibimizle iletişime geçin. Size en kısa sürede dönüş yapacağız.</p>
+
+            <div class="contact-items">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                </div>
+                <div>
+                  <strong>Adres</strong>
+                  <span>Merkez Mah. İnşaat Cad. No:1, İstanbul</span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.5 12.37a19.79 19.79 0 01-3.07-8.67A2 2 0 012.45 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.43a16 16 0 006.29 6.29l.8-.8a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                  </svg>
+                </div>
+                <div>
+                  <strong>Telefon</strong>
+                  <span>+90 (212) 000 00 00</span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                </div>
+                <div>
+                  <strong>E-Posta</strong>
+                  <span>info@siryap.com.tr</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="ad">Ad Soyad</label>
+                <input type="text" id="ad" name="ad" placeholder="Adınızı girin" required />
+              </div>
+              <div class="form-group">
+                <label for="telefon">Telefon</label>
+                <input type="tel" id="telefon" name="telefon" placeholder="Telefon numaranız" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">E-Posta</label>
+              <input type="email" id="email" name="email" placeholder="E-posta adresiniz" required />
+            </div>
+            <div class="form-group">
+              <label for="konu">Konu</label>
+              <select id="konu" name="konu">
+                <option value="">Konu seçiniz...</option>
+                <option>Konut Projesi</option>
+                <option>Ticari Proje</option>
+                <option>Endüstriyel Proje</option>
+                <option>Diğer</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mesaj">Mesaj</label>
+              <textarea id="mesaj" name="mesaj" rows="5" placeholder="Projenizi kısaca anlatın..."></textarea>
+            </div>
+            <button type="submit" class="btn-primary full-width" id="submit-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13"/>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+              </svg>
+              Mesaj Gönder
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo-text footer-logo">SİR<span class="logo-accent">YAP</span></span>
+          <span class="logo-sub footer-logo-sub">İNŞAAT</span>
+          <p>Kalite ve güvenilirliği bir arada sunan inşaat şirketiniz.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Hızlı Bağlantılar</h4>
+          <ul>
+            <li><a href="#anasayfa">Anasayfa</a></li>
+            <li><a href="#kurumsal">Hakkımızda</a></li>
+            <li><a href="ekip.html">Ekip</a></li>
+            <li><a href="insan-kaynaklari.html">İnsan Kaynakları</a></li>
+            <li><a href="#referanslar">Referanslar</a></li>
+            <li><a href="#projeler">Projeler</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>İletişim</h4>
+          <p>Merkez Mah. İnşaat Cad. No:1<br/>İstanbul, Türkiye</p>
+          <p><a href="tel:+902120000000">+90 (212) 000 00 00</a></p>
+          <p><a href="mailto:info@siryap.com.tr">info@siryap.com.tr</a></p>
+        </div>
+        <div class="footer-social">
+          <h4>Sosyal Medya</h4>
+          <div class="social-links">
+            <a href="#" class="social-link" id="social-instagram" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" id="social-linkedin" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" id="social-twitter" aria-label="Twitter/X">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 SİRYAP İnşaat. Tüm hakları saklıdır.</p>
+        <p>Kalite · Güvenilirlik · Yenilik</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
